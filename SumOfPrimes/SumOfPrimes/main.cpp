@@ -30,11 +30,15 @@ bool isPrime(int num){
 
 int main() {
     int64_t sum = 0;
+    clock_t begin = clock();
     for (int i = 0; i < 2000000; i++){
         if (isPrime(i)){
             sum += i;
         }
     }
+    clock_t end = clock();
     cout << sum << endl;
+    double elapsed_secs = double(end - begin) / CLOCKS_PER_SEC;
+    cout << elapsed_secs << endl;
     return 0;
 }
