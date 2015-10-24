@@ -29,9 +29,9 @@ bool isPrime(int num){
 }
 
 int main() {
-    int64_t sum = 0;
+    int64_t sum = 17;
     clock_t begin = clock();
-    for (int i = 0; i < 2000000; i++){
+    for (int i = 10; i < 2000000; i++){
         if (isPrime(i)){
             sum += i;
         }
