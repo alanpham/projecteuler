@@ -39,7 +39,6 @@ int main(int argc, const char * argv[]) {
     int count = 0;
     while (count < 10001){
         if (isPrime(prime)){
-            std::cout << prime << std::endl;
             maxPrime = prime;
             count++;
             prime++;
